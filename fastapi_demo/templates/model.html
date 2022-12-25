@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Emotional Talking Faces</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="static/images/favicon-small.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/modelStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="static/play2.js" defer></script> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="logo-image">
+        <img src="static/images/icon.jpg" class="img-fluid">
+      </div>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><b>Emotional Talking Faces</b></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/emo"><b>Home</b></a></li>
+        <!-- <li><a href="#">Home</a></li> -->
+        <li class="active"><a href="#"><b>Model</b></a></li>
+        <li><a href="application"><b>Application</b></a></li>
+        <li><a href="example"><b>Examples</b></a></li>
+        <li><a href="paper"><b>Paper</b></a></li>
+        <li><a href="demo"><b>Demo</b></a></li>
+        <li><a href="code"><b>Code</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button type="button" class="oval" href="#"><span class="glyphicon glyphicon-user "></span> <b>Sign
+              In</b></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="subtitle">
+    <p><span class="titleText">End-to-End Framework</span></p>
+  </div>
+
+  <div class="container classImg">
+    <img src="static/images/Framework.jpg" alt="Framework Image">
+    <p><span class="captionImg" style='text-align:justify; font-size: 1.7vh; width:60%;'>Figure 1. We illustrate a video generation end-to-end network built upon base skeleton architecture. It accepts a continuous set of frames (fully-masked)
+    concatenated with reference frames, the Mel spectrogram form of a speech utterance, and a categorical emotion concatenates their embeddings in a 
+    specific way as shown in the above Figure to generate a lip-synced video rendered with the input emotion</span></p>
+  </div>
+
+  <!-- <div class="bodyClass">
+    
+    <p><span class="bodyText"> &#x2022; <span class="boldText"> Emotion Discriminator </span> and <span class="boldText"> Lip-Sync Expert </span> are pre-trained. <br><br>
+
+    &#x2022; <span class="boldText"> Video, audio </span> , and <span class="boldText"> motion </span> inputs are passed through their respective <span class="boldText"> encoders </span> <br><br>
+    
+    
+    &#x2022; Then the <span class="boldText"> embeddings </span> generated are concatenated in skip <span class="boldText"> connection style </span>. <br><br>
+    
+    &#x2022; The concatenated embeddings are passed through the <span class="boldText"> generator </span> to generate the required output video (lip  <br> synced with the audio input and
+    incorporated with the emotion input). <br><br>
+    
+    &#x2022; The model is penalized on <span class="boldText"> sync quality </span>  (using the <span class="boldText"> pre-trained Lip-Sync Expert </span>), visual quality (using <br><span class="boldText"> L1 construction </span> and <span class="boldText">
+      perceptual loss </span>), and <span class="boldText"> emotion incorporation </span>  (using the Emotion Discriminator).</span></p>
+  </div> -->
+
+  <div class="bodyClass" style='text-align:justify; font-size: 2.1vh; width:47% ;'>
+    
+      Lip synchronization and talking face generation have gained a specific interest from the research community with the advent and need of digital communication in different fields. Prior works propose several elegant solutions to this problem. However, they often fail to create realistic-looking videos that account for people's expressions and emotions. To mitigate this, we build a talking face generation framework conditioned on a categorical emotion to generate videos with appropriate expressions, making them more real-looking and convincing. With a broad range of six emotions, i.e., anger, disgust, fear, happiness, neutral, and sad, our model generalizes across identities, emotions, and languages.
+
+    
+  </div>
+
+  <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+</body>
+
+</html>

@@ -1,0 +1,2540 @@
+[2022-11-08 17:20:23 +0530] [123997] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc054f8b378>
+  on_reload: <function OnReload.on_reload at 0x7fc054f8b488>
+  when_ready: <function WhenReady.when_ready at 0x7fc054f8b598>
+  pre_fork: <function Prefork.pre_fork at 0x7fc054f8b6a8>
+  post_fork: <function Postfork.post_fork at 0x7fc054f8b7b8>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc054f8b8c8>
+  worker_int: <function WorkerInt.worker_int at 0x7fc054f8b9d8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc054f8bae8>
+  pre_exec: <function PreExec.pre_exec at 0x7fc054f8bbf8>
+  pre_request: <function PreRequest.pre_request at 0x7fc054f8bd08>
+  post_request: <function PostRequest.post_request at 0x7fc054f8bd90>
+  child_exit: <function ChildExit.child_exit at 0x7fc054f8bea0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc054fa7048>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc054fa7158>
+  on_exit: <function OnExit.on_exit at 0x7fc054fa7268>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-08 17:20:23 +0530] [123997] [INFO] Starting gunicorn 20.1.0
+[2022-11-08 17:20:23 +0530] [123997] [DEBUG] Arbiter booted
+[2022-11-08 17:20:23 +0530] [123997] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (123997)
+[2022-11-08 17:20:23 +0530] [123997] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-08 17:20:23 +0530] [124016] [INFO] Booting worker with pid: 124016
+[2022-11-08 17:20:23 +0530] [124017] [INFO] Booting worker with pid: 124017
+[2022-11-08 17:20:23 +0530] [124018] [INFO] Booting worker with pid: 124018
+[2022-11-08 17:20:23 +0530] [124019] [INFO] Booting worker with pid: 124019
+[2022-11-08 17:20:24 +0530] [124021] [INFO] Booting worker with pid: 124021
+[2022-11-08 17:20:24 +0530] [124022] [INFO] Booting worker with pid: 124022
+[2022-11-08 17:20:24 +0530] [124023] [INFO] Booting worker with pid: 124023
+[2022-11-08 17:20:24 +0530] [124024] [INFO] Booting worker with pid: 124024
+[2022-11-08 17:20:24 +0530] [124025] [INFO] Booting worker with pid: 124025
+[2022-11-08 17:20:24 +0530] [124026] [INFO] Booting worker with pid: 124026
+[2022-11-08 17:20:24 +0530] [124018] [INFO] Started server process [124018]
+[2022-11-08 17:20:24 +0530] [124018] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124018] [INFO] Application startup complete.
+[2022-11-08 17:20:24 +0530] [124016] [INFO] Started server process [124016]
+[2022-11-08 17:20:24 +0530] [124016] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124016] [INFO] Application startup complete.
+[2022-11-08 17:20:24 +0530] [124029] [INFO] Booting worker with pid: 124029
+[2022-11-08 17:20:24 +0530] [124017] [INFO] Started server process [124017]
+[2022-11-08 17:20:24 +0530] [124017] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124017] [INFO] Application startup complete.
+[2022-11-08 17:20:24 +0530] [124030] [INFO] Booting worker with pid: 124030
+[2022-11-08 17:20:24 +0530] [124031] [INFO] Booting worker with pid: 124031
+[2022-11-08 17:20:24 +0530] [124019] [INFO] Started server process [124019]
+[2022-11-08 17:20:24 +0530] [124019] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124019] [INFO] Application startup complete.
+[2022-11-08 17:20:24 +0530] [124032] [INFO] Booting worker with pid: 124032
+[2022-11-08 17:20:24 +0530] [124033] [INFO] Booting worker with pid: 124033
+[2022-11-08 17:20:24 +0530] [124021] [INFO] Started server process [124021]
+[2022-11-08 17:20:24 +0530] [124021] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124021] [INFO] Application startup complete.
+[2022-11-08 17:20:24 +0530] [124034] [INFO] Booting worker with pid: 124034
+[2022-11-08 17:20:24 +0530] [124035] [INFO] Booting worker with pid: 124035
+[2022-11-08 17:20:24 +0530] [124022] [INFO] Started server process [124022]
+[2022-11-08 17:20:24 +0530] [124022] [INFO] Waiting for application startup.
+[2022-11-08 17:20:24 +0530] [124022] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124036] [INFO] Booting worker with pid: 124036
+[2022-11-08 17:20:25 +0530] [124023] [INFO] Started server process [124023]
+[2022-11-08 17:20:25 +0530] [124023] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124023] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124037] [INFO] Booting worker with pid: 124037
+[2022-11-08 17:20:25 +0530] [124025] [INFO] Started server process [124025]
+[2022-11-08 17:20:25 +0530] [124025] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124025] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124024] [INFO] Started server process [124024]
+[2022-11-08 17:20:25 +0530] [124024] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124024] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124038] [INFO] Booting worker with pid: 124038
+[2022-11-08 17:20:25 +0530] [124026] [INFO] Started server process [124026]
+[2022-11-08 17:20:25 +0530] [124026] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124026] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124039] [INFO] Booting worker with pid: 124039
+[2022-11-08 17:20:25 +0530] [124029] [INFO] Started server process [124029]
+[2022-11-08 17:20:25 +0530] [124029] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124029] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124040] [INFO] Booting worker with pid: 124040
+[2022-11-08 17:20:25 +0530] [124032] [INFO] Started server process [124032]
+[2022-11-08 17:20:25 +0530] [124032] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124032] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124041] [INFO] Booting worker with pid: 124041
+[2022-11-08 17:20:25 +0530] [124031] [INFO] Started server process [124031]
+[2022-11-08 17:20:25 +0530] [124031] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124031] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124030] [INFO] Started server process [124030]
+[2022-11-08 17:20:25 +0530] [124030] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124030] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124034] [INFO] Started server process [124034]
+[2022-11-08 17:20:25 +0530] [124034] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124034] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124033] [INFO] Started server process [124033]
+[2022-11-08 17:20:25 +0530] [124033] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124033] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124042] [INFO] Booting worker with pid: 124042
+[2022-11-08 17:20:25 +0530] [124043] [INFO] Booting worker with pid: 124043
+[2022-11-08 17:20:25 +0530] [124035] [INFO] Started server process [124035]
+[2022-11-08 17:20:25 +0530] [124035] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124035] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124044] [INFO] Booting worker with pid: 124044
+[2022-11-08 17:20:25 +0530] [124045] [INFO] Booting worker with pid: 124045
+[2022-11-08 17:20:25 +0530] [124046] [INFO] Booting worker with pid: 124046
+[2022-11-08 17:20:25 +0530] [124047] [INFO] Booting worker with pid: 124047
+[2022-11-08 17:20:25 +0530] [124036] [INFO] Started server process [124036]
+[2022-11-08 17:20:25 +0530] [124036] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124036] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124037] [INFO] Started server process [124037]
+[2022-11-08 17:20:25 +0530] [124037] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124037] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124048] [INFO] Booting worker with pid: 124048
+[2022-11-08 17:20:25 +0530] [124049] [INFO] Booting worker with pid: 124049
+[2022-11-08 17:20:25 +0530] [124038] [INFO] Started server process [124038]
+[2022-11-08 17:20:25 +0530] [124038] [INFO] Waiting for application startup.
+[2022-11-08 17:20:25 +0530] [124038] [INFO] Application startup complete.
+[2022-11-08 17:20:25 +0530] [124050] [INFO] Booting worker with pid: 124050
+[2022-11-08 17:20:26 +0530] [124039] [INFO] Started server process [124039]
+[2022-11-08 17:20:26 +0530] [124039] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124039] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124040] [INFO] Started server process [124040]
+[2022-11-08 17:20:26 +0530] [124040] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124040] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124051] [INFO] Booting worker with pid: 124051
+[2022-11-08 17:20:26 +0530] [123997] [DEBUG] 33 workers
+[2022-11-08 17:20:26 +0530] [124041] [INFO] Started server process [124041]
+[2022-11-08 17:20:26 +0530] [124041] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124041] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124042] [INFO] Started server process [124042]
+[2022-11-08 17:20:26 +0530] [124042] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124042] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124043] [INFO] Started server process [124043]
+[2022-11-08 17:20:26 +0530] [124043] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124043] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124044] [INFO] Started server process [124044]
+[2022-11-08 17:20:26 +0530] [124044] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124044] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124045] [INFO] Started server process [124045]
+[2022-11-08 17:20:26 +0530] [124045] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124045] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124047] [INFO] Started server process [124047]
+[2022-11-08 17:20:26 +0530] [124047] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124047] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124046] [INFO] Started server process [124046]
+[2022-11-08 17:20:26 +0530] [124046] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124046] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124049] [INFO] Started server process [124049]
+[2022-11-08 17:20:26 +0530] [124049] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124049] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124048] [INFO] Started server process [124048]
+[2022-11-08 17:20:26 +0530] [124048] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124048] [INFO] Application startup complete.
+[2022-11-08 17:20:26 +0530] [124050] [INFO] Started server process [124050]
+[2022-11-08 17:20:26 +0530] [124050] [INFO] Waiting for application startup.
+[2022-11-08 17:20:26 +0530] [124050] [INFO] Application startup complete.
+[2022-11-08 17:20:27 +0530] [124051] [INFO] Started server process [124051]
+[2022-11-08 17:20:27 +0530] [124051] [INFO] Waiting for application startup.
+[2022-11-08 17:20:27 +0530] [124051] [INFO] Application startup complete.
+[2022-11-09 13:54:37 +0530] [123997] [INFO] Handling signal: term
+[2022-11-09 13:54:37 +0530] [124039] [INFO] Shutting down
+[2022-11-09 13:54:37 +0530] [124039] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:37 +0530] [124042] [INFO] Shutting down
+[2022-11-09 13:54:37 +0530] [124042] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:37 +0530] [124045] [INFO] Shutting down
+[2022-11-09 13:54:37 +0530] [124033] [INFO] Shutting down
+[2022-11-09 13:54:37 +0530] [124018] [INFO] Shutting down
+[2022-11-09 13:54:37 +0530] [124045] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:37 +0530] [124018] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:37 +0530] [124033] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124039] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124039] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124039] [INFO] Finished server process [124039]
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124039] [INFO] Worker exiting (pid: 124039)
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124042] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124042] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124042] [INFO] Finished server process [124042]
+[2022-11-09 13:54:38 +0530] [124042] [INFO] Worker exiting (pid: 124042)
+[2022-11-09 13:54:38 +0530] [124045] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124045] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124018] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124045] [INFO] Finished server process [124045]
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Shutting down
+[2022-11-09 13:54:38 +0530] [124018] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 13:54:38 +0530] [124018] [INFO] Finished server process [124018]
+[2022-11-09 13:54:38 +0530] [124033] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124033] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124033] [INFO] Finished server process [124033]
+[2022-11-09 13:54:38 +0530] [124018] [INFO] Worker exiting (pid: 124018)
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124033] [INFO] Worker exiting (pid: 124033)
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Finished server process [124021]
+[2022-11-09 13:54:38 +0530] [124021] [INFO] Worker exiting (pid: 124021)
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Finished server process [124023]
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Finished server process [124026]
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Finished server process [124041]
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Finished server process [124047]
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Finished server process [124044]
+[2022-11-09 13:54:38 +0530] [124023] [INFO] Worker exiting (pid: 124023)
+[2022-11-09 13:54:38 +0530] [124026] [INFO] Worker exiting (pid: 124026)
+[2022-11-09 13:54:38 +0530] [124041] [INFO] Worker exiting (pid: 124041)
+[2022-11-09 13:54:38 +0530] [124047] [INFO] Worker exiting (pid: 124047)
+[2022-11-09 13:54:38 +0530] [124044] [INFO] Worker exiting (pid: 124044)
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Finished server process [124019]
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Finished server process [124016]
+[2022-11-09 13:54:38 +0530] [124045] [INFO] Worker exiting (pid: 124045)
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Finished server process [124034]
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Finished server process [124029]
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Finished server process [124037]
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Finished server process [124040]
+[2022-11-09 13:54:38 +0530] [124034] [INFO] Worker exiting (pid: 124034)
+[2022-11-09 13:54:38 +0530] [124029] [INFO] Worker exiting (pid: 124029)
+[2022-11-09 13:54:38 +0530] [124040] [INFO] Worker exiting (pid: 124040)
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Finished server process [124050]
+[2022-11-09 13:54:38 +0530] [124019] [INFO] Worker exiting (pid: 124019)
+[2022-11-09 13:54:38 +0530] [124016] [INFO] Worker exiting (pid: 124016)
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124050] [INFO] Worker exiting (pid: 124050)
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Finished server process [124017]
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124017] [INFO] Worker exiting (pid: 124017)
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Finished server process [124036]
+[2022-11-09 13:54:38 +0530] [124036] [INFO] Worker exiting (pid: 124036)
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Finished server process [124046]
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Finished server process [124051]
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Finished server process [124031]
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Finished server process [124043]
+[2022-11-09 13:54:38 +0530] [124046] [INFO] Worker exiting (pid: 124046)
+[2022-11-09 13:54:38 +0530] [124051] [INFO] Worker exiting (pid: 124051)
+[2022-11-09 13:54:38 +0530] [124031] [INFO] Worker exiting (pid: 124031)
+[2022-11-09 13:54:38 +0530] [124043] [INFO] Worker exiting (pid: 124043)
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Finished server process [124038]
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Finished server process [124032]
+[2022-11-09 13:54:38 +0530] [124038] [INFO] Worker exiting (pid: 124038)
+[2022-11-09 13:54:38 +0530] [124032] [INFO] Worker exiting (pid: 124032)
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Finished server process [124024]
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124024] [INFO] Worker exiting (pid: 124024)
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124037] [INFO] Worker exiting (pid: 124037)
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Finished server process [124022]
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Finished server process [124030]
+[2022-11-09 13:54:38 +0530] [124022] [INFO] Worker exiting (pid: 124022)
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Finished server process [124049]
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124030] [INFO] Worker exiting (pid: 124030)
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Waiting for application shutdown.
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Finished server process [124025]
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Application shutdown complete.
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Finished server process [124035]
+[2022-11-09 13:54:38 +0530] [124049] [INFO] Worker exiting (pid: 124049)
+[2022-11-09 13:54:38 +0530] [124025] [INFO] Worker exiting (pid: 124025)
+[2022-11-09 13:54:38 +0530] [124035] [INFO] Worker exiting (pid: 124035)
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Finished server process [124048]
+[2022-11-09 13:54:38 +0530] [124048] [INFO] Worker exiting (pid: 124048)
+[2022-11-09 13:54:39 +0530] [123997] [INFO] Shutting down: Master
+[2022-11-09 13:54:40 +0530] [47952] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 0
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7faea5ce8400>
+  on_reload: <function OnReload.on_reload at 0x7faea5ce8510>
+  when_ready: <function WhenReady.when_ready at 0x7faea5ce8620>
+  pre_fork: <function Prefork.pre_fork at 0x7faea5ce8730>
+  post_fork: <function Postfork.post_fork at 0x7faea5ce8840>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7faea5ce8950>
+  worker_int: <function WorkerInt.worker_int at 0x7faea5ce8a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7faea5ce8b70>
+  pre_exec: <function PreExec.pre_exec at 0x7faea5ce8c80>
+  pre_request: <function PreRequest.pre_request at 0x7faea5ce8d90>
+  post_request: <function PostRequest.post_request at 0x7faea5ce8e18>
+  child_exit: <function ChildExit.child_exit at 0x7faea5ce8f28>
+  worker_exit: <function WorkerExit.worker_exit at 0x7faea5d030d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7faea5d031e0>
+  on_exit: <function OnExit.on_exit at 0x7faea5d032f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-09 13:54:40 +0530] [47952] [INFO] Starting gunicorn 20.1.0
+[2022-11-09 13:54:40 +0530] [47952] [DEBUG] Arbiter booted
+[2022-11-09 13:54:40 +0530] [47952] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (47952)
+[2022-11-09 13:54:40 +0530] [47952] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-09 13:54:40 +0530] [47986] [INFO] Booting worker with pid: 47986
+[2022-11-09 13:54:40 +0530] [47987] [INFO] Booting worker with pid: 47987
+[2022-11-09 13:54:40 +0530] [47988] [INFO] Booting worker with pid: 47988
+[2022-11-09 13:54:40 +0530] [47990] [INFO] Booting worker with pid: 47990
+[2022-11-09 13:54:40 +0530] [47991] [INFO] Booting worker with pid: 47991
+[2022-11-09 13:54:40 +0530] [47992] [INFO] Booting worker with pid: 47992
+[2022-11-09 13:54:40 +0530] [47993] [INFO] Booting worker with pid: 47993
+[2022-11-09 13:54:41 +0530] [47994] [INFO] Booting worker with pid: 47994
+[2022-11-09 13:54:41 +0530] [47995] [INFO] Booting worker with pid: 47995
+[2022-11-09 13:54:41 +0530] [47986] [INFO] Started server process [47986]
+[2022-11-09 13:54:41 +0530] [47986] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47986] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [47999] [INFO] Booting worker with pid: 47999
+[2022-11-09 13:54:41 +0530] [48000] [INFO] Booting worker with pid: 48000
+[2022-11-09 13:54:41 +0530] [47987] [INFO] Started server process [47987]
+[2022-11-09 13:54:41 +0530] [47987] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47987] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48001] [INFO] Booting worker with pid: 48001
+[2022-11-09 13:54:41 +0530] [47988] [INFO] Started server process [47988]
+[2022-11-09 13:54:41 +0530] [47988] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47988] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48002] [INFO] Booting worker with pid: 48002
+[2022-11-09 13:54:41 +0530] [47990] [INFO] Started server process [47990]
+[2022-11-09 13:54:41 +0530] [47990] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47990] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48003] [INFO] Booting worker with pid: 48003
+[2022-11-09 13:54:41 +0530] [48005] [INFO] Booting worker with pid: 48005
+[2022-11-09 13:54:41 +0530] [47992] [INFO] Started server process [47992]
+[2022-11-09 13:54:41 +0530] [47992] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47992] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [47993] [INFO] Started server process [47993]
+[2022-11-09 13:54:41 +0530] [47993] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47993] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48007] [INFO] Booting worker with pid: 48007
+[2022-11-09 13:54:41 +0530] [47991] [INFO] Started server process [47991]
+[2022-11-09 13:54:41 +0530] [47991] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47991] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48009] [INFO] Booting worker with pid: 48009
+[2022-11-09 13:54:41 +0530] [48010] [INFO] Booting worker with pid: 48010
+[2022-11-09 13:54:41 +0530] [48011] [INFO] Booting worker with pid: 48011
+[2022-11-09 13:54:41 +0530] [48012] [INFO] Booting worker with pid: 48012
+[2022-11-09 13:54:41 +0530] [48013] [INFO] Booting worker with pid: 48013
+[2022-11-09 13:54:41 +0530] [47999] [INFO] Started server process [47999]
+[2022-11-09 13:54:41 +0530] [47999] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [47999] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48014] [INFO] Booting worker with pid: 48014
+[2022-11-09 13:54:41 +0530] [48001] [INFO] Started server process [48001]
+[2022-11-09 13:54:41 +0530] [48001] [INFO] Waiting for application startup.
+[2022-11-09 13:54:41 +0530] [48001] [INFO] Application startup complete.
+[2022-11-09 13:54:41 +0530] [48016] [INFO] Booting worker with pid: 48016
+[2022-11-09 13:54:41 +0530] [48017] [INFO] Booting worker with pid: 48017
+[2022-11-09 13:54:41 +0530] [48018] [INFO] Booting worker with pid: 48018
+[2022-11-09 13:54:42 +0530] [48003] [INFO] Started server process [48003]
+[2022-11-09 13:54:42 +0530] [48003] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48003] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48019] [INFO] Booting worker with pid: 48019
+[2022-11-09 13:54:42 +0530] [48020] [INFO] Booting worker with pid: 48020
+[2022-11-09 13:54:42 +0530] [48021] [INFO] Booting worker with pid: 48021
+[2022-11-09 13:54:42 +0530] [47994] [INFO] Started server process [47994]
+[2022-11-09 13:54:42 +0530] [47994] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [47994] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48000] [INFO] Started server process [48000]
+[2022-11-09 13:54:42 +0530] [48000] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48000] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48005] [INFO] Started server process [48005]
+[2022-11-09 13:54:42 +0530] [48005] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48005] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [47995] [INFO] Started server process [47995]
+[2022-11-09 13:54:42 +0530] [47995] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [47995] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48022] [INFO] Booting worker with pid: 48022
+[2022-11-09 13:54:42 +0530] [48023] [INFO] Booting worker with pid: 48023
+[2022-11-09 13:54:42 +0530] [48024] [INFO] Booting worker with pid: 48024
+[2022-11-09 13:54:42 +0530] [48002] [INFO] Started server process [48002]
+[2022-11-09 13:54:42 +0530] [48002] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48002] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48009] [INFO] Started server process [48009]
+[2022-11-09 13:54:42 +0530] [48009] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48009] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48025] [INFO] Booting worker with pid: 48025
+[2022-11-09 13:54:42 +0530] [48010] [INFO] Started server process [48010]
+[2022-11-09 13:54:42 +0530] [48010] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48010] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48026] [INFO] Booting worker with pid: 48026
+[2022-11-09 13:54:42 +0530] [47952] [DEBUG] 33 workers
+[2022-11-09 13:54:42 +0530] [48014] [INFO] Started server process [48014]
+[2022-11-09 13:54:42 +0530] [48014] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48014] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48007] [INFO] Started server process [48007]
+[2022-11-09 13:54:42 +0530] [48007] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48007] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48011] [INFO] Started server process [48011]
+[2022-11-09 13:54:42 +0530] [48011] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48011] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48013] [INFO] Started server process [48013]
+[2022-11-09 13:54:42 +0530] [48013] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48013] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48019] [INFO] Started server process [48019]
+[2022-11-09 13:54:42 +0530] [48019] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48019] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48022] [INFO] Started server process [48022]
+[2022-11-09 13:54:42 +0530] [48021] [INFO] Started server process [48021]
+[2022-11-09 13:54:42 +0530] [48021] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48022] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48021] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48022] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48012] [INFO] Started server process [48012]
+[2022-11-09 13:54:42 +0530] [48012] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48012] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48018] [INFO] Started server process [48018]
+[2022-11-09 13:54:42 +0530] [48018] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48018] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48017] [INFO] Started server process [48017]
+[2022-11-09 13:54:42 +0530] [48017] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48017] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48016] [INFO] Started server process [48016]
+[2022-11-09 13:54:42 +0530] [48016] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48016] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48024] [INFO] Started server process [48024]
+[2022-11-09 13:54:42 +0530] [48024] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48024] [INFO] Application startup complete.
+[2022-11-09 13:54:42 +0530] [48025] [INFO] Started server process [48025]
+[2022-11-09 13:54:42 +0530] [48025] [INFO] Waiting for application startup.
+[2022-11-09 13:54:42 +0530] [48025] [INFO] Application startup complete.
+[2022-11-09 13:54:43 +0530] [48023] [INFO] Started server process [48023]
+[2022-11-09 13:54:43 +0530] [48023] [INFO] Waiting for application startup.
+[2022-11-09 13:54:43 +0530] [48023] [INFO] Application startup complete.
+[2022-11-09 13:54:43 +0530] [48020] [INFO] Started server process [48020]
+[2022-11-09 13:54:43 +0530] [48020] [INFO] Waiting for application startup.
+[2022-11-09 13:54:43 +0530] [48020] [INFO] Application startup complete.
+[2022-11-09 13:54:43 +0530] [48026] [INFO] Started server process [48026]
+[2022-11-09 13:54:43 +0530] [48026] [INFO] Waiting for application startup.
+[2022-11-09 13:54:43 +0530] [48026] [INFO] Application startup complete.
+[2022-11-09 14:02:59 +0530] [47952] [INFO] Handling signal: term
+[2022-11-09 14:02:59 +0530] [48012] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48012] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47986] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48009] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48009] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48010] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48003] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48011] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48020] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48007] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47986] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48003] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48020] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48007] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47992] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47992] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48011] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48010] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48018] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48018] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47993] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47993] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48023] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48023] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47994] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48021] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47995] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47991] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47995] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47991] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47994] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48000] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48025] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48000] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48001] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48019] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48013] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48021] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48001] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48019] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48016] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48016] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48013] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48022] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48026] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48022] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47990] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47990] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48025] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48005] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47988] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48014] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48005] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47987] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48026] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48024] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48002] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48014] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48017] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [47988] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48002] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47987] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47999] [INFO] Shutting down
+[2022-11-09 14:02:59 +0530] [48024] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48017] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [47999] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 14:02:59 +0530] [48012] [INFO] Waiting for application shutdown.
+[2022-11-09 14:02:59 +0530] [48012] [INFO] Application shutdown complete.
+[2022-11-09 14:02:59 +0530] [48012] [INFO] Finished server process [48012]
+[2022-11-09 14:03:00 +0530] [48012] [INFO] Worker exiting (pid: 48012)
+[2022-11-09 14:03:00 +0530] [48009] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48009] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48009] [INFO] Finished server process [48009]
+[2022-11-09 14:03:00 +0530] [48009] [INFO] Worker exiting (pid: 48009)
+[2022-11-09 14:03:00 +0530] [48007] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48020] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48003] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47986] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48007] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48020] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48007] [INFO] Finished server process [48007]
+[2022-11-09 14:03:00 +0530] [48020] [INFO] Finished server process [48020]
+[2022-11-09 14:03:00 +0530] [47992] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48003] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47986] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48011] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47992] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47986] [INFO] Finished server process [47986]
+[2022-11-09 14:03:00 +0530] [48010] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48003] [INFO] Finished server process [48003]
+[2022-11-09 14:03:00 +0530] [47992] [INFO] Finished server process [47992]
+[2022-11-09 14:03:00 +0530] [48011] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48011] [INFO] Finished server process [48011]
+[2022-11-09 14:03:00 +0530] [48010] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47992] [INFO] Worker exiting (pid: 47992)
+[2022-11-09 14:03:00 +0530] [47986] [INFO] Worker exiting (pid: 47986)
+[2022-11-09 14:03:00 +0530] [48003] [INFO] Worker exiting (pid: 48003)
+[2022-11-09 14:03:00 +0530] [48020] [INFO] Worker exiting (pid: 48020)
+[2022-11-09 14:03:00 +0530] [48007] [INFO] Worker exiting (pid: 48007)
+[2022-11-09 14:03:00 +0530] [48011] [INFO] Worker exiting (pid: 48011)
+[2022-11-09 14:03:00 +0530] [48010] [INFO] Finished server process [48010]
+[2022-11-09 14:03:00 +0530] [48018] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48018] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48018] [INFO] Finished server process [48018]
+[2022-11-09 14:03:00 +0530] [48018] [INFO] Worker exiting (pid: 48018)
+[2022-11-09 14:03:00 +0530] [48010] [INFO] Worker exiting (pid: 48010)
+[2022-11-09 14:03:00 +0530] [47993] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48023] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48023] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48023] [INFO] Finished server process [48023]
+[2022-11-09 14:03:00 +0530] [47993] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48023] [INFO] Worker exiting (pid: 48023)
+[2022-11-09 14:03:00 +0530] [47993] [INFO] Finished server process [47993]
+[2022-11-09 14:03:00 +0530] [47993] [INFO] Worker exiting (pid: 47993)
+[2022-11-09 14:03:00 +0530] [47991] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47995] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47991] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47995] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47995] [INFO] Finished server process [47995]
+[2022-11-09 14:03:00 +0530] [47991] [INFO] Finished server process [47991]
+[2022-11-09 14:03:00 +0530] [47994] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47995] [INFO] Worker exiting (pid: 47995)
+[2022-11-09 14:03:00 +0530] [47991] [INFO] Worker exiting (pid: 47991)
+[2022-11-09 14:03:00 +0530] [47994] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48000] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47994] [INFO] Finished server process [47994]
+[2022-11-09 14:03:00 +0530] [48000] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48000] [INFO] Finished server process [48000]
+[2022-11-09 14:03:00 +0530] [48000] [INFO] Worker exiting (pid: 48000)
+[2022-11-09 14:03:00 +0530] [47994] [INFO] Worker exiting (pid: 47994)
+[2022-11-09 14:03:00 +0530] [48021] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48019] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48016] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48021] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48016] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48016] [INFO] Finished server process [48016]
+[2022-11-09 14:03:00 +0530] [48021] [INFO] Finished server process [48021]
+[2022-11-09 14:03:00 +0530] [48001] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48022] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48019] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48016] [INFO] Worker exiting (pid: 48016)
+[2022-11-09 14:03:00 +0530] [48019] [INFO] Finished server process [48019]
+[2022-11-09 14:03:00 +0530] [48022] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48022] [INFO] Finished server process [48022]
+[2022-11-09 14:03:00 +0530] [48001] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48001] [INFO] Finished server process [48001]
+[2022-11-09 14:03:00 +0530] [48025] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48013] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47990] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48025] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48022] [INFO] Worker exiting (pid: 48022)
+[2022-11-09 14:03:00 +0530] [48013] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48025] [INFO] Finished server process [48025]
+[2022-11-09 14:03:00 +0530] [47990] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47990] [INFO] Finished server process [47990]
+[2022-11-09 14:03:00 +0530] [48013] [INFO] Finished server process [48013]
+[2022-11-09 14:03:00 +0530] [48021] [INFO] Worker exiting (pid: 48021)
+[2022-11-09 14:03:00 +0530] [48013] [INFO] Worker exiting (pid: 48013)
+[2022-11-09 14:03:00 +0530] [48025] [INFO] Worker exiting (pid: 48025)
+[2022-11-09 14:03:00 +0530] [48019] [INFO] Worker exiting (pid: 48019)
+[2022-11-09 14:03:00 +0530] [47990] [INFO] Worker exiting (pid: 47990)
+[2022-11-09 14:03:00 +0530] [48005] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48026] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48001] [INFO] Worker exiting (pid: 48001)
+[2022-11-09 14:03:00 +0530] [48005] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48005] [INFO] Finished server process [48005]
+[2022-11-09 14:03:00 +0530] [48026] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47988] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48026] [INFO] Finished server process [48026]
+[2022-11-09 14:03:00 +0530] [48002] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47987] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47988] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47988] [INFO] Finished server process [47988]
+[2022-11-09 14:03:00 +0530] [47988] [INFO] Worker exiting (pid: 47988)
+[2022-11-09 14:03:00 +0530] [48026] [INFO] Worker exiting (pid: 48026)
+[2022-11-09 14:03:00 +0530] [48002] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47987] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48002] [INFO] Finished server process [48002]
+[2022-11-09 14:03:00 +0530] [47987] [INFO] Finished server process [47987]
+[2022-11-09 14:03:00 +0530] [48014] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48024] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48002] [INFO] Worker exiting (pid: 48002)
+[2022-11-09 14:03:00 +0530] [48005] [INFO] Worker exiting (pid: 48005)
+[2022-11-09 14:03:00 +0530] [48014] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48014] [INFO] Finished server process [48014]
+[2022-11-09 14:03:00 +0530] [48017] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [48024] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47987] [INFO] Worker exiting (pid: 47987)
+[2022-11-09 14:03:00 +0530] [48014] [INFO] Worker exiting (pid: 48014)
+[2022-11-09 14:03:00 +0530] [47999] [INFO] Waiting for application shutdown.
+[2022-11-09 14:03:00 +0530] [47999] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [47999] [INFO] Finished server process [47999]
+[2022-11-09 14:03:00 +0530] [48024] [INFO] Finished server process [48024]
+[2022-11-09 14:03:00 +0530] [47999] [INFO] Worker exiting (pid: 47999)
+[2022-11-09 14:03:00 +0530] [48024] [INFO] Worker exiting (pid: 48024)
+[2022-11-09 14:03:00 +0530] [48017] [INFO] Application shutdown complete.
+[2022-11-09 14:03:00 +0530] [48017] [INFO] Finished server process [48017]
+[2022-11-09 14:03:00 +0530] [48017] [INFO] Worker exiting (pid: 48017)
+[2022-11-09 14:03:01 +0530] [47952] [INFO] Shutting down: Master
+[2022-11-09 22:58:13 +0530] [65242] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 0
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2eebc35400>
+  on_reload: <function OnReload.on_reload at 0x7f2eebc35510>
+  when_ready: <function WhenReady.when_ready at 0x7f2eebc35620>
+  pre_fork: <function Prefork.pre_fork at 0x7f2eebc35730>
+  post_fork: <function Postfork.post_fork at 0x7f2eebc35840>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2eebc35950>
+  worker_int: <function WorkerInt.worker_int at 0x7f2eebc35a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2eebc35b70>
+  pre_exec: <function PreExec.pre_exec at 0x7f2eebc35c80>
+  pre_request: <function PreRequest.pre_request at 0x7f2eebc35d90>
+  post_request: <function PostRequest.post_request at 0x7f2eebc35e18>
+  child_exit: <function ChildExit.child_exit at 0x7f2eebc35f28>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2eebc500d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2eebc501e0>
+  on_exit: <function OnExit.on_exit at 0x7f2eebc502f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-09 22:58:13 +0530] [65242] [INFO] Starting gunicorn 20.1.0
+[2022-11-09 22:58:13 +0530] [65242] [DEBUG] Arbiter booted
+[2022-11-09 22:58:13 +0530] [65242] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (65242)
+[2022-11-09 22:58:13 +0530] [65242] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-09 22:58:13 +0530] [65263] [INFO] Booting worker with pid: 65263
+[2022-11-09 22:58:13 +0530] [65264] [INFO] Booting worker with pid: 65264
+[2022-11-09 22:58:14 +0530] [65265] [INFO] Booting worker with pid: 65265
+[2022-11-09 22:58:14 +0530] [65266] [INFO] Booting worker with pid: 65266
+[2022-11-09 22:58:14 +0530] [65267] [INFO] Booting worker with pid: 65267
+[2022-11-09 22:58:14 +0530] [65270] [INFO] Booting worker with pid: 65270
+[2022-11-09 22:58:14 +0530] [65271] [INFO] Booting worker with pid: 65271
+[2022-11-09 22:58:14 +0530] [65272] [INFO] Booting worker with pid: 65272
+[2022-11-09 22:58:14 +0530] [65273] [INFO] Booting worker with pid: 65273
+[2022-11-09 22:58:14 +0530] [65274] [INFO] Booting worker with pid: 65274
+[2022-11-09 22:58:14 +0530] [65277] [INFO] Booting worker with pid: 65277
+[2022-11-09 22:58:14 +0530] [65280] [INFO] Booting worker with pid: 65280
+[2022-11-09 22:58:14 +0530] [65263] [INFO] Started server process [65263]
+[2022-11-09 22:58:14 +0530] [65263] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65263] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65265] [INFO] Started server process [65265]
+[2022-11-09 22:58:14 +0530] [65265] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65265] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65281] [INFO] Booting worker with pid: 65281
+[2022-11-09 22:58:14 +0530] [65282] [INFO] Booting worker with pid: 65282
+[2022-11-09 22:58:14 +0530] [65283] [INFO] Booting worker with pid: 65283
+[2022-11-09 22:58:14 +0530] [65267] [INFO] Started server process [65267]
+[2022-11-09 22:58:14 +0530] [65267] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65267] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65264] [INFO] Started server process [65264]
+[2022-11-09 22:58:14 +0530] [65264] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65264] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65284] [INFO] Booting worker with pid: 65284
+[2022-11-09 22:58:14 +0530] [65270] [INFO] Started server process [65270]
+[2022-11-09 22:58:14 +0530] [65270] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65270] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65266] [INFO] Started server process [65266]
+[2022-11-09 22:58:14 +0530] [65266] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65266] [INFO] Application startup complete.
+[2022-11-09 22:58:14 +0530] [65285] [INFO] Booting worker with pid: 65285
+[2022-11-09 22:58:14 +0530] [65271] [INFO] Started server process [65271]
+[2022-11-09 22:58:14 +0530] [65271] [INFO] Waiting for application startup.
+[2022-11-09 22:58:14 +0530] [65271] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65286] [INFO] Booting worker with pid: 65286
+[2022-11-09 22:58:15 +0530] [65272] [INFO] Started server process [65272]
+[2022-11-09 22:58:15 +0530] [65272] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65272] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65273] [INFO] Started server process [65273]
+[2022-11-09 22:58:15 +0530] [65273] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65273] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65287] [INFO] Booting worker with pid: 65287
+[2022-11-09 22:58:15 +0530] [65288] [INFO] Booting worker with pid: 65288
+[2022-11-09 22:58:15 +0530] [65289] [INFO] Booting worker with pid: 65289
+[2022-11-09 22:58:15 +0530] [65290] [INFO] Booting worker with pid: 65290
+[2022-11-09 22:58:15 +0530] [65277] [INFO] Started server process [65277]
+[2022-11-09 22:58:15 +0530] [65277] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65277] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65291] [INFO] Booting worker with pid: 65291
+[2022-11-09 22:58:15 +0530] [65274] [INFO] Started server process [65274]
+[2022-11-09 22:58:15 +0530] [65274] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65274] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65280] [INFO] Started server process [65280]
+[2022-11-09 22:58:15 +0530] [65280] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65280] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65293] [INFO] Booting worker with pid: 65293
+[2022-11-09 22:58:15 +0530] [65296] [INFO] Booting worker with pid: 65296
+[2022-11-09 22:58:15 +0530] [65297] [INFO] Booting worker with pid: 65297
+[2022-11-09 22:58:15 +0530] [65282] [INFO] Started server process [65282]
+[2022-11-09 22:58:15 +0530] [65282] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65282] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65298] [INFO] Booting worker with pid: 65298
+[2022-11-09 22:58:15 +0530] [65299] [INFO] Booting worker with pid: 65299
+[2022-11-09 22:58:15 +0530] [65281] [INFO] Started server process [65281]
+[2022-11-09 22:58:15 +0530] [65281] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65281] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65283] [INFO] Started server process [65283]
+[2022-11-09 22:58:15 +0530] [65283] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65283] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65300] [INFO] Booting worker with pid: 65300
+[2022-11-09 22:58:15 +0530] [65301] [INFO] Booting worker with pid: 65301
+[2022-11-09 22:58:15 +0530] [65284] [INFO] Started server process [65284]
+[2022-11-09 22:58:15 +0530] [65284] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65284] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65285] [INFO] Started server process [65285]
+[2022-11-09 22:58:15 +0530] [65285] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65285] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65302] [INFO] Booting worker with pid: 65302
+[2022-11-09 22:58:15 +0530] [65303] [INFO] Booting worker with pid: 65303
+[2022-11-09 22:58:15 +0530] [65304] [INFO] Booting worker with pid: 65304
+[2022-11-09 22:58:15 +0530] [65286] [INFO] Started server process [65286]
+[2022-11-09 22:58:15 +0530] [65286] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65286] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65242] [DEBUG] 33 workers
+[2022-11-09 22:58:15 +0530] [65287] [INFO] Started server process [65287]
+[2022-11-09 22:58:15 +0530] [65287] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65287] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65289] [INFO] Started server process [65289]
+[2022-11-09 22:58:15 +0530] [65289] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65289] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65291] [INFO] Started server process [65291]
+[2022-11-09 22:58:15 +0530] [65291] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65291] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65290] [INFO] Started server process [65290]
+[2022-11-09 22:58:15 +0530] [65290] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65290] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65288] [INFO] Started server process [65288]
+[2022-11-09 22:58:15 +0530] [65288] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65288] [INFO] Application startup complete.
+[2022-11-09 22:58:15 +0530] [65293] [INFO] Started server process [65293]
+[2022-11-09 22:58:15 +0530] [65293] [INFO] Waiting for application startup.
+[2022-11-09 22:58:15 +0530] [65293] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65296] [INFO] Started server process [65296]
+[2022-11-09 22:58:16 +0530] [65296] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65296] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65298] [INFO] Started server process [65298]
+[2022-11-09 22:58:16 +0530] [65298] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65298] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65300] [INFO] Started server process [65300]
+[2022-11-09 22:58:16 +0530] [65300] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65300] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65299] [INFO] Started server process [65299]
+[2022-11-09 22:58:16 +0530] [65299] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65299] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65301] [INFO] Started server process [65301]
+[2022-11-09 22:58:16 +0530] [65301] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65301] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65304] [INFO] Started server process [65304]
+[2022-11-09 22:58:16 +0530] [65304] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65304] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65302] [INFO] Started server process [65302]
+[2022-11-09 22:58:16 +0530] [65302] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65302] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65297] [INFO] Started server process [65297]
+[2022-11-09 22:58:16 +0530] [65297] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65297] [INFO] Application startup complete.
+[2022-11-09 22:58:16 +0530] [65303] [INFO] Started server process [65303]
+[2022-11-09 22:58:16 +0530] [65303] [INFO] Waiting for application startup.
+[2022-11-09 22:58:16 +0530] [65303] [INFO] Application startup complete.
+[2022-11-09 23:18:21 +0530] [65242] [INFO] Handling signal: term
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Shutting down
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Finished server process [65282]
+[2022-11-09 23:18:21 +0530] [65282] [INFO] Worker exiting (pid: 65282)
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Finished server process [65284]
+[2022-11-09 23:18:21 +0530] [65284] [INFO] Worker exiting (pid: 65284)
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Finished server process [65299]
+[2022-11-09 23:18:21 +0530] [65299] [INFO] Worker exiting (pid: 65299)
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Finished server process [65286]
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Finished server process [65265]
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Finished server process [65281]
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65281] [INFO] Worker exiting (pid: 65281)
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Finished server process [65287]
+[2022-11-09 23:18:21 +0530] [65286] [INFO] Worker exiting (pid: 65286)
+[2022-11-09 23:18:21 +0530] [65265] [INFO] Worker exiting (pid: 65265)
+[2022-11-09 23:18:21 +0530] [65287] [INFO] Worker exiting (pid: 65287)
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Finished server process [65303]
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Finished server process [65272]
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Finished server process [65266]
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Finished server process [65273]
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Finished server process [65298]
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Finished server process [65280]
+[2022-11-09 23:18:21 +0530] [65266] [INFO] Worker exiting (pid: 65266)
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Finished server process [65301]
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65301] [INFO] Worker exiting (pid: 65301)
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Finished server process [65264]
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Finished server process [65267]
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Finished server process [65263]
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Finished server process [65300]
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Finished server process [65289]
+[2022-11-09 23:18:21 +0530] [65263] [INFO] Worker exiting (pid: 65263)
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65264] [INFO] Worker exiting (pid: 65264)
+[2022-11-09 23:18:21 +0530] [65300] [INFO] Worker exiting (pid: 65300)
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Finished server process [65274]
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65274] [INFO] Worker exiting (pid: 65274)
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Finished server process [65288]
+[2022-11-09 23:18:21 +0530] [65288] [INFO] Worker exiting (pid: 65288)
+[2022-11-09 23:18:21 +0530] [65289] [INFO] Worker exiting (pid: 65289)
+[2022-11-09 23:18:21 +0530] [65303] [INFO] Worker exiting (pid: 65303)
+[2022-11-09 23:18:21 +0530] [65280] [INFO] Worker exiting (pid: 65280)
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Finished server process [65277]
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Finished server process [65297]
+[2022-11-09 23:18:21 +0530] [65277] [INFO] Worker exiting (pid: 65277)
+[2022-11-09 23:18:21 +0530] [65297] [INFO] Worker exiting (pid: 65297)
+[2022-11-09 23:18:21 +0530] [65272] [INFO] Worker exiting (pid: 65272)
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65273] [INFO] Worker exiting (pid: 65273)
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Finished server process [65283]
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Finished server process [65285]
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Finished server process [65302]
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65285] [INFO] Worker exiting (pid: 65285)
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65283] [INFO] Worker exiting (pid: 65283)
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Finished server process [65271]
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Finished server process [65296]
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65267] [INFO] Worker exiting (pid: 65267)
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Finished server process [65291]
+[2022-11-09 23:18:21 +0530] [65302] [INFO] Worker exiting (pid: 65302)
+[2022-11-09 23:18:21 +0530] [65296] [INFO] Worker exiting (pid: 65296)
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65271] [INFO] Worker exiting (pid: 65271)
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65291] [INFO] Worker exiting (pid: 65291)
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Finished server process [65304]
+[2022-11-09 23:18:21 +0530] [65298] [INFO] Worker exiting (pid: 65298)
+[2022-11-09 23:18:21 +0530] [65304] [INFO] Worker exiting (pid: 65304)
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Finished server process [65290]
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Finished server process [65270]
+[2022-11-09 23:18:21 +0530] [65270] [INFO] Worker exiting (pid: 65270)
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Waiting for application shutdown.
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Application shutdown complete.
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Finished server process [65293]
+[2022-11-09 23:18:21 +0530] [65293] [INFO] Worker exiting (pid: 65293)
+[2022-11-09 23:18:21 +0530] [65290] [INFO] Worker exiting (pid: 65290)
+[2022-11-09 23:18:22 +0530] [65242] [INFO] Shutting down: Master
+[2022-11-09 23:18:23 +0530] [66622] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 0
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff666de1400>
+  on_reload: <function OnReload.on_reload at 0x7ff666de1510>
+  when_ready: <function WhenReady.when_ready at 0x7ff666de1620>
+  pre_fork: <function Prefork.pre_fork at 0x7ff666de1730>
+  post_fork: <function Postfork.post_fork at 0x7ff666de1840>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff666de1950>
+  worker_int: <function WorkerInt.worker_int at 0x7ff666de1a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff666de1b70>
+  pre_exec: <function PreExec.pre_exec at 0x7ff666de1c80>
+  pre_request: <function PreRequest.pre_request at 0x7ff666de1d90>
+  post_request: <function PostRequest.post_request at 0x7ff666de1e18>
+  child_exit: <function ChildExit.child_exit at 0x7ff666de1f28>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff666dfc0d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff666dfc1e0>
+  on_exit: <function OnExit.on_exit at 0x7ff666dfc2f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-09 23:18:23 +0530] [66622] [INFO] Starting gunicorn 20.1.0
+[2022-11-09 23:18:23 +0530] [66622] [DEBUG] Arbiter booted
+[2022-11-09 23:18:23 +0530] [66622] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (66622)
+[2022-11-09 23:18:23 +0530] [66622] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-09 23:18:23 +0530] [66650] [INFO] Booting worker with pid: 66650
+[2022-11-09 23:18:23 +0530] [66651] [INFO] Booting worker with pid: 66651
+[2022-11-09 23:18:23 +0530] [66652] [INFO] Booting worker with pid: 66652
+[2022-11-09 23:18:23 +0530] [66653] [INFO] Booting worker with pid: 66653
+[2022-11-09 23:18:23 +0530] [66654] [INFO] Booting worker with pid: 66654
+[2022-11-09 23:18:23 +0530] [66655] [INFO] Booting worker with pid: 66655
+[2022-11-09 23:18:23 +0530] [66657] [INFO] Booting worker with pid: 66657
+[2022-11-09 23:18:23 +0530] [66658] [INFO] Booting worker with pid: 66658
+[2022-11-09 23:18:23 +0530] [66659] [INFO] Booting worker with pid: 66659
+[2022-11-09 23:18:24 +0530] [66660] [INFO] Booting worker with pid: 66660
+[2022-11-09 23:18:24 +0530] [66661] [INFO] Booting worker with pid: 66661
+[2022-11-09 23:18:24 +0530] [66663] [INFO] Booting worker with pid: 66663
+[2022-11-09 23:18:24 +0530] [66665] [INFO] Booting worker with pid: 66665
+[2022-11-09 23:18:24 +0530] [66666] [INFO] Booting worker with pid: 66666
+[2022-11-09 23:18:24 +0530] [66667] [INFO] Booting worker with pid: 66667
+[2022-11-09 23:18:24 +0530] [66669] [INFO] Booting worker with pid: 66669
+[2022-11-09 23:18:24 +0530] [66672] [INFO] Booting worker with pid: 66672
+[2022-11-09 23:18:24 +0530] [66674] [INFO] Booting worker with pid: 66674
+[2022-11-09 23:18:24 +0530] [66675] [INFO] Booting worker with pid: 66675
+[2022-11-09 23:18:24 +0530] [66677] [INFO] Booting worker with pid: 66677
+[2022-11-09 23:18:24 +0530] [66678] [INFO] Booting worker with pid: 66678
+[2022-11-09 23:18:24 +0530] [66652] [INFO] Started server process [66652]
+[2022-11-09 23:18:24 +0530] [66652] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66652] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66650] [INFO] Started server process [66650]
+[2022-11-09 23:18:24 +0530] [66650] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66650] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66679] [INFO] Booting worker with pid: 66679
+[2022-11-09 23:18:24 +0530] [66653] [INFO] Started server process [66653]
+[2022-11-09 23:18:24 +0530] [66653] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66653] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66658] [INFO] Started server process [66658]
+[2022-11-09 23:18:24 +0530] [66658] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66658] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66680] [INFO] Booting worker with pid: 66680
+[2022-11-09 23:18:24 +0530] [66651] [INFO] Started server process [66651]
+[2022-11-09 23:18:24 +0530] [66651] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66651] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66657] [INFO] Started server process [66657]
+[2022-11-09 23:18:24 +0530] [66657] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66657] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66681] [INFO] Booting worker with pid: 66681
+[2022-11-09 23:18:24 +0530] [66654] [INFO] Started server process [66654]
+[2022-11-09 23:18:24 +0530] [66654] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66654] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66682] [INFO] Booting worker with pid: 66682
+[2022-11-09 23:18:24 +0530] [66655] [INFO] Started server process [66655]
+[2022-11-09 23:18:24 +0530] [66655] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66655] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66683] [INFO] Booting worker with pid: 66683
+[2022-11-09 23:18:24 +0530] [66684] [INFO] Booting worker with pid: 66684
+[2022-11-09 23:18:24 +0530] [66685] [INFO] Booting worker with pid: 66685
+[2022-11-09 23:18:24 +0530] [66659] [INFO] Started server process [66659]
+[2022-11-09 23:18:24 +0530] [66659] [INFO] Waiting for application startup.
+[2022-11-09 23:18:24 +0530] [66659] [INFO] Application startup complete.
+[2022-11-09 23:18:24 +0530] [66686] [INFO] Booting worker with pid: 66686
+[2022-11-09 23:18:25 +0530] [66660] [INFO] Started server process [66660]
+[2022-11-09 23:18:25 +0530] [66660] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66660] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66687] [INFO] Booting worker with pid: 66687
+[2022-11-09 23:18:25 +0530] [66663] [INFO] Started server process [66663]
+[2022-11-09 23:18:25 +0530] [66663] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66663] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66688] [INFO] Booting worker with pid: 66688
+[2022-11-09 23:18:25 +0530] [66689] [INFO] Booting worker with pid: 66689
+[2022-11-09 23:18:25 +0530] [66661] [INFO] Started server process [66661]
+[2022-11-09 23:18:25 +0530] [66661] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66661] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66690] [INFO] Booting worker with pid: 66690
+[2022-11-09 23:18:25 +0530] [66622] [DEBUG] 33 workers
+[2022-11-09 23:18:25 +0530] [66669] [INFO] Started server process [66669]
+[2022-11-09 23:18:25 +0530] [66669] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66669] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66665] [INFO] Started server process [66665]
+[2022-11-09 23:18:25 +0530] [66665] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66665] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66672] [INFO] Started server process [66672]
+[2022-11-09 23:18:25 +0530] [66672] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66672] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66674] [INFO] Started server process [66674]
+[2022-11-09 23:18:25 +0530] [66674] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66674] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66675] [INFO] Started server process [66675]
+[2022-11-09 23:18:25 +0530] [66675] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66675] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66666] [INFO] Started server process [66666]
+[2022-11-09 23:18:25 +0530] [66666] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66666] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66667] [INFO] Started server process [66667]
+[2022-11-09 23:18:25 +0530] [66667] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66667] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66680] [INFO] Started server process [66680]
+[2022-11-09 23:18:25 +0530] [66680] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66680] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66678] [INFO] Started server process [66678]
+[2022-11-09 23:18:25 +0530] [66678] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66678] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66677] [INFO] Started server process [66677]
+[2022-11-09 23:18:25 +0530] [66677] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66677] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66679] [INFO] Started server process [66679]
+[2022-11-09 23:18:25 +0530] [66679] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66679] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66685] [INFO] Started server process [66685]
+[2022-11-09 23:18:25 +0530] [66685] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66685] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66682] [INFO] Started server process [66682]
+[2022-11-09 23:18:25 +0530] [66682] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66682] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66684] [INFO] Started server process [66684]
+[2022-11-09 23:18:25 +0530] [66684] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66684] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66683] [INFO] Started server process [66683]
+[2022-11-09 23:18:25 +0530] [66683] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66683] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66681] [INFO] Started server process [66681]
+[2022-11-09 23:18:25 +0530] [66681] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66681] [INFO] Application startup complete.
+[2022-11-09 23:18:25 +0530] [66689] [INFO] Started server process [66689]
+[2022-11-09 23:18:25 +0530] [66689] [INFO] Waiting for application startup.
+[2022-11-09 23:18:25 +0530] [66689] [INFO] Application startup complete.
+[2022-11-09 23:18:26 +0530] [66687] [INFO] Started server process [66687]
+[2022-11-09 23:18:26 +0530] [66687] [INFO] Waiting for application startup.
+[2022-11-09 23:18:26 +0530] [66687] [INFO] Application startup complete.
+[2022-11-09 23:18:26 +0530] [66686] [INFO] Started server process [66686]
+[2022-11-09 23:18:26 +0530] [66686] [INFO] Waiting for application startup.
+[2022-11-09 23:18:26 +0530] [66686] [INFO] Application startup complete.
+[2022-11-09 23:18:26 +0530] [66690] [INFO] Started server process [66690]
+[2022-11-09 23:18:26 +0530] [66690] [INFO] Waiting for application startup.
+[2022-11-09 23:18:26 +0530] [66690] [INFO] Application startup complete.
+[2022-11-09 23:18:26 +0530] [66688] [INFO] Started server process [66688]
+[2022-11-09 23:18:26 +0530] [66688] [INFO] Waiting for application startup.
+[2022-11-09 23:18:26 +0530] [66688] [INFO] Application startup complete.
+[2022-11-09 23:48:19 +0530] [66622] [INFO] Handling signal: term
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Shutting down
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Finished server process [66688]
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-09 23:48:19 +0530] [66688] [INFO] Worker exiting (pid: 66688)
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Finished server process [66690]
+[2022-11-09 23:48:19 +0530] [66690] [INFO] Worker exiting (pid: 66690)
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Finished server process [66650]
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Finished server process [66674]
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Finished server process [66657]
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66674] [INFO] Worker exiting (pid: 66674)
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Finished server process [66687]
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66650] [INFO] Worker exiting (pid: 66650)
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66657] [INFO] Worker exiting (pid: 66657)
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Finished server process [66689]
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Finished server process [66658]
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Finished server process [66685]
+[2022-11-09 23:48:19 +0530] [66687] [INFO] Worker exiting (pid: 66687)
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Finished server process [66663]
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Finished server process [66669]
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Finished server process [66672]
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Finished server process [66665]
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Finished server process [66655]
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Finished server process [66679]
+[2022-11-09 23:48:19 +0530] [66658] [INFO] Worker exiting (pid: 66658)
+[2022-11-09 23:48:19 +0530] [66663] [INFO] Worker exiting (pid: 66663)
+[2022-11-09 23:48:19 +0530] [66689] [INFO] Worker exiting (pid: 66689)
+[2022-11-09 23:48:19 +0530] [66672] [INFO] Worker exiting (pid: 66672)
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66665] [INFO] Worker exiting (pid: 66665)
+[2022-11-09 23:48:19 +0530] [66655] [INFO] Worker exiting (pid: 66655)
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66679] [INFO] Worker exiting (pid: 66679)
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Finished server process [66677]
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Finished server process [66652]
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Finished server process [66653]
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Finished server process [66678]
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66669] [INFO] Worker exiting (pid: 66669)
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Finished server process [66661]
+[2022-11-09 23:48:19 +0530] [66685] [INFO] Worker exiting (pid: 66685)
+[2022-11-09 23:48:19 +0530] [66661] [INFO] Worker exiting (pid: 66661)
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Finished server process [66684]
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66677] [INFO] Worker exiting (pid: 66677)
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Finished server process [66651]
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66684] [INFO] Worker exiting (pid: 66684)
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Finished server process [66654]
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Finished server process [66660]
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Finished server process [66681]
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Finished server process [66686]
+[2022-11-09 23:48:19 +0530] [66651] [INFO] Worker exiting (pid: 66651)
+[2022-11-09 23:48:19 +0530] [66660] [INFO] Worker exiting (pid: 66660)
+[2022-11-09 23:48:19 +0530] [66653] [INFO] Worker exiting (pid: 66653)
+[2022-11-09 23:48:19 +0530] [66686] [INFO] Worker exiting (pid: 66686)
+[2022-11-09 23:48:19 +0530] [66652] [INFO] Worker exiting (pid: 66652)
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Finished server process [66682]
+[2022-11-09 23:48:19 +0530] [66681] [INFO] Worker exiting (pid: 66681)
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Finished server process [66659]
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Finished server process [66675]
+[2022-11-09 23:48:19 +0530] [66682] [INFO] Worker exiting (pid: 66682)
+[2022-11-09 23:48:19 +0530] [66659] [INFO] Worker exiting (pid: 66659)
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66675] [INFO] Worker exiting (pid: 66675)
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66678] [INFO] Worker exiting (pid: 66678)
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Finished server process [66666]
+[2022-11-09 23:48:19 +0530] [66666] [INFO] Worker exiting (pid: 66666)
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Finished server process [66680]
+[2022-11-09 23:48:19 +0530] [66654] [INFO] Worker exiting (pid: 66654)
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Finished server process [66683]
+[2022-11-09 23:48:19 +0530] [66680] [INFO] Worker exiting (pid: 66680)
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Waiting for application shutdown.
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Application shutdown complete.
+[2022-11-09 23:48:19 +0530] [66683] [INFO] Worker exiting (pid: 66683)
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Finished server process [66667]
+[2022-11-09 23:48:19 +0530] [66667] [INFO] Worker exiting (pid: 66667)
+[2022-11-09 23:48:20 +0530] [66622] [INFO] Shutting down: Master
+[2022-11-10 00:22:56 +0530] [70865] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 600
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8a4b399400>
+  on_reload: <function OnReload.on_reload at 0x7f8a4b399510>
+  when_ready: <function WhenReady.when_ready at 0x7f8a4b399620>
+  pre_fork: <function Prefork.pre_fork at 0x7f8a4b399730>
+  post_fork: <function Postfork.post_fork at 0x7f8a4b399840>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8a4b399950>
+  worker_int: <function WorkerInt.worker_int at 0x7f8a4b399a60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8a4b399b70>
+  pre_exec: <function PreExec.pre_exec at 0x7f8a4b399c80>
+  pre_request: <function PreRequest.pre_request at 0x7f8a4b399d90>
+  post_request: <function PostRequest.post_request at 0x7f8a4b399e18>
+  child_exit: <function ChildExit.child_exit at 0x7f8a4b399f28>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8a4b3b40d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8a4b3b41e0>
+  on_exit: <function OnExit.on_exit at 0x7f8a4b3b42f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-10 00:22:56 +0530] [70865] [INFO] Starting gunicorn 20.1.0
+[2022-11-10 00:22:56 +0530] [70865] [DEBUG] Arbiter booted
+[2022-11-10 00:22:56 +0530] [70865] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (70865)
+[2022-11-10 00:22:56 +0530] [70865] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-10 00:22:56 +0530] [70884] [INFO] Booting worker with pid: 70884
+[2022-11-10 00:22:56 +0530] [70886] [INFO] Booting worker with pid: 70886
+[2022-11-10 00:22:56 +0530] [70887] [INFO] Booting worker with pid: 70887
+[2022-11-10 00:22:56 +0530] [70888] [INFO] Booting worker with pid: 70888
+[2022-11-10 00:22:56 +0530] [70889] [INFO] Booting worker with pid: 70889
+[2022-11-10 00:22:56 +0530] [70890] [INFO] Booting worker with pid: 70890
+[2022-11-10 00:22:56 +0530] [70892] [INFO] Booting worker with pid: 70892
+[2022-11-10 00:22:56 +0530] [70893] [INFO] Booting worker with pid: 70893
+[2022-11-10 00:22:57 +0530] [70894] [INFO] Booting worker with pid: 70894
+[2022-11-10 00:22:57 +0530] [70895] [INFO] Booting worker with pid: 70895
+[2022-11-10 00:22:57 +0530] [70899] [INFO] Booting worker with pid: 70899
+[2022-11-10 00:22:57 +0530] [70884] [INFO] Started server process [70884]
+[2022-11-10 00:22:57 +0530] [70884] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70884] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70900] [INFO] Booting worker with pid: 70900
+[2022-11-10 00:22:57 +0530] [70901] [INFO] Booting worker with pid: 70901
+[2022-11-10 00:22:57 +0530] [70886] [INFO] Started server process [70886]
+[2022-11-10 00:22:57 +0530] [70886] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70886] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70902] [INFO] Booting worker with pid: 70902
+[2022-11-10 00:22:57 +0530] [70887] [INFO] Started server process [70887]
+[2022-11-10 00:22:57 +0530] [70887] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70887] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70888] [INFO] Started server process [70888]
+[2022-11-10 00:22:57 +0530] [70888] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70888] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70889] [INFO] Started server process [70889]
+[2022-11-10 00:22:57 +0530] [70889] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70889] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70903] [INFO] Booting worker with pid: 70903
+[2022-11-10 00:22:57 +0530] [70890] [INFO] Started server process [70890]
+[2022-11-10 00:22:57 +0530] [70890] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70890] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70904] [INFO] Booting worker with pid: 70904
+[2022-11-10 00:22:57 +0530] [70892] [INFO] Started server process [70892]
+[2022-11-10 00:22:57 +0530] [70892] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70892] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70905] [INFO] Booting worker with pid: 70905
+[2022-11-10 00:22:57 +0530] [70893] [INFO] Started server process [70893]
+[2022-11-10 00:22:57 +0530] [70893] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70893] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70906] [INFO] Booting worker with pid: 70906
+[2022-11-10 00:22:57 +0530] [70907] [INFO] Booting worker with pid: 70907
+[2022-11-10 00:22:57 +0530] [70908] [INFO] Booting worker with pid: 70908
+[2022-11-10 00:22:57 +0530] [70894] [INFO] Started server process [70894]
+[2022-11-10 00:22:57 +0530] [70894] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70894] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70909] [INFO] Booting worker with pid: 70909
+[2022-11-10 00:22:57 +0530] [70910] [INFO] Booting worker with pid: 70910
+[2022-11-10 00:22:57 +0530] [70911] [INFO] Booting worker with pid: 70911
+[2022-11-10 00:22:57 +0530] [70895] [INFO] Started server process [70895]
+[2022-11-10 00:22:57 +0530] [70895] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70895] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70912] [INFO] Booting worker with pid: 70912
+[2022-11-10 00:22:57 +0530] [70899] [INFO] Started server process [70899]
+[2022-11-10 00:22:57 +0530] [70899] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70899] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70913] [INFO] Booting worker with pid: 70913
+[2022-11-10 00:22:57 +0530] [70914] [INFO] Booting worker with pid: 70914
+[2022-11-10 00:22:57 +0530] [70900] [INFO] Started server process [70900]
+[2022-11-10 00:22:57 +0530] [70900] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70900] [INFO] Application startup complete.
+[2022-11-10 00:22:57 +0530] [70901] [INFO] Started server process [70901]
+[2022-11-10 00:22:57 +0530] [70901] [INFO] Waiting for application startup.
+[2022-11-10 00:22:57 +0530] [70901] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70915] [INFO] Booting worker with pid: 70915
+[2022-11-10 00:22:58 +0530] [70916] [INFO] Booting worker with pid: 70916
+[2022-11-10 00:22:58 +0530] [70917] [INFO] Booting worker with pid: 70917
+[2022-11-10 00:22:58 +0530] [70903] [INFO] Started server process [70903]
+[2022-11-10 00:22:58 +0530] [70902] [INFO] Started server process [70902]
+[2022-11-10 00:22:58 +0530] [70903] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70902] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70902] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70903] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70918] [INFO] Booting worker with pid: 70918
+[2022-11-10 00:22:58 +0530] [70919] [INFO] Booting worker with pid: 70919
+[2022-11-10 00:22:58 +0530] [70906] [INFO] Started server process [70906]
+[2022-11-10 00:22:58 +0530] [70906] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70906] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70904] [INFO] Started server process [70904]
+[2022-11-10 00:22:58 +0530] [70904] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70904] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70920] [INFO] Booting worker with pid: 70920
+[2022-11-10 00:22:58 +0530] [70922] [INFO] Booting worker with pid: 70922
+[2022-11-10 00:22:58 +0530] [70905] [INFO] Started server process [70905]
+[2022-11-10 00:22:58 +0530] [70905] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70905] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70907] [INFO] Started server process [70907]
+[2022-11-10 00:22:58 +0530] [70907] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70907] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70865] [DEBUG] 33 workers
+[2022-11-10 00:22:58 +0530] [70910] [INFO] Started server process [70910]
+[2022-11-10 00:22:58 +0530] [70910] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70910] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70908] [INFO] Started server process [70908]
+[2022-11-10 00:22:58 +0530] [70908] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70908] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70911] [INFO] Started server process [70911]
+[2022-11-10 00:22:58 +0530] [70911] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70911] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70909] [INFO] Started server process [70909]
+[2022-11-10 00:22:58 +0530] [70909] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70909] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70912] [INFO] Started server process [70912]
+[2022-11-10 00:22:58 +0530] [70912] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70912] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70915] [INFO] Started server process [70915]
+[2022-11-10 00:22:58 +0530] [70915] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70914] [INFO] Started server process [70914]
+[2022-11-10 00:22:58 +0530] [70913] [INFO] Started server process [70913]
+[2022-11-10 00:22:58 +0530] [70914] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70913] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70913] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70915] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70914] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70917] [INFO] Started server process [70917]
+[2022-11-10 00:22:58 +0530] [70917] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70917] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70916] [INFO] Started server process [70916]
+[2022-11-10 00:22:58 +0530] [70916] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70916] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70918] [INFO] Started server process [70918]
+[2022-11-10 00:22:58 +0530] [70918] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70918] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70919] [INFO] Started server process [70919]
+[2022-11-10 00:22:58 +0530] [70919] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70919] [INFO] Application startup complete.
+[2022-11-10 00:22:58 +0530] [70920] [INFO] Started server process [70920]
+[2022-11-10 00:22:58 +0530] [70920] [INFO] Waiting for application startup.
+[2022-11-10 00:22:58 +0530] [70920] [INFO] Application startup complete.
+[2022-11-10 00:22:59 +0530] [70922] [INFO] Started server process [70922]
+[2022-11-10 00:22:59 +0530] [70922] [INFO] Waiting for application startup.
+[2022-11-10 00:22:59 +0530] [70922] [INFO] Application startup complete.
+[2022-11-10 18:55:36 +0530] [70865] [INFO] Handling signal: term
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Shutting down
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Finished server process [70915]
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70915] [INFO] Worker exiting (pid: 70915)
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Finished server process [70889]
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Finished server process [70909]
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Finished server process [70922]
+[2022-11-10 18:55:36 +0530] [70909] [INFO] Worker exiting (pid: 70909)
+[2022-11-10 18:55:36 +0530] [70922] [INFO] Worker exiting (pid: 70922)
+[2022-11-10 18:55:36 +0530] [70889] [INFO] Worker exiting (pid: 70889)
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Finished server process [70890]
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Finished server process [70904]
+[2022-11-10 18:55:36 +0530] [70890] [INFO] Worker exiting (pid: 70890)
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Finished server process [70893]
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Finished server process [70902]
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70893] [INFO] Worker exiting (pid: 70893)
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Finished server process [70913]
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Finished server process [70901]
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Finished server process [70917]
+[2022-11-10 18:55:36 +0530] [70901] [INFO] Worker exiting (pid: 70901)
+[2022-11-10 18:55:36 +0530] [70913] [INFO] Worker exiting (pid: 70913)
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Finished server process [70884]
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Finished server process [70895]
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70895] [INFO] Worker exiting (pid: 70895)
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Finished server process [70906]
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Finished server process [70918]
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Finished server process [70910]
+[2022-11-10 18:55:36 +0530] [70906] [INFO] Worker exiting (pid: 70906)
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70884] [INFO] Worker exiting (pid: 70884)
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Finished server process [70920]
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Finished server process [70903]
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Finished server process [70907]
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Finished server process [70916]
+[2022-11-10 18:55:36 +0530] [70910] [INFO] Worker exiting (pid: 70910)
+[2022-11-10 18:55:36 +0530] [70920] [INFO] Worker exiting (pid: 70920)
+[2022-11-10 18:55:36 +0530] [70907] [INFO] Worker exiting (pid: 70907)
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Finished server process [70905]
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70918] [INFO] Worker exiting (pid: 70918)
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70916] [INFO] Worker exiting (pid: 70916)
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Finished server process [70894]
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Finished server process [70914]
+[2022-11-10 18:55:36 +0530] [70894] [INFO] Worker exiting (pid: 70894)
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70905] [INFO] Worker exiting (pid: 70905)
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70914] [INFO] Worker exiting (pid: 70914)
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Finished server process [70919]
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Finished server process [70900]
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Finished server process [70908]
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70904] [INFO] Worker exiting (pid: 70904)
+[2022-11-10 18:55:36 +0530] [70900] [INFO] Worker exiting (pid: 70900)
+[2022-11-10 18:55:36 +0530] [70919] [INFO] Worker exiting (pid: 70919)
+[2022-11-10 18:55:36 +0530] [70917] [INFO] Worker exiting (pid: 70917)
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70908] [INFO] Worker exiting (pid: 70908)
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Waiting for application shutdown.
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Finished server process [70911]
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Finished server process [70912]
+[2022-11-10 18:55:36 +0530] [70911] [INFO] Worker exiting (pid: 70911)
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Finished server process [70886]
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Application shutdown complete.
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Finished server process [70887]
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Finished server process [70899]
+[2022-11-10 18:55:36 +0530] [70886] [INFO] Worker exiting (pid: 70886)
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Finished server process [70892]
+[2022-11-10 18:55:36 +0530] [70899] [INFO] Worker exiting (pid: 70899)
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Finished server process [70888]
+[2022-11-10 18:55:36 +0530] [70912] [INFO] Worker exiting (pid: 70912)
+[2022-11-10 18:55:36 +0530] [70887] [INFO] Worker exiting (pid: 70887)
+[2022-11-10 18:55:36 +0530] [70888] [INFO] Worker exiting (pid: 70888)
+[2022-11-10 18:55:36 +0530] [70902] [INFO] Worker exiting (pid: 70902)
+[2022-11-10 18:55:36 +0530] [70892] [INFO] Worker exiting (pid: 70892)
+[2022-11-10 18:55:36 +0530] [70903] [INFO] Worker exiting (pid: 70903)
+[2022-11-10 18:55:37 +0530] [70865] [INFO] Shutting down: Master
+[2022-11-10 18:55:38 +0530] [91599] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/sahil/fastapi_demo/gunicorn.sock']
+  backlog: 2048
+  workers: 33
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 600
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/sahil/fastapi_demo
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1083
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: /home/sahil/fastapi_demo/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/sahil/fastapi_demo/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main2:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f443cddc400>
+  on_reload: <function OnReload.on_reload at 0x7f443cddc510>
+  when_ready: <function WhenReady.when_ready at 0x7f443cddc620>
+  pre_fork: <function Prefork.pre_fork at 0x7f443cddc730>
+  post_fork: <function Postfork.post_fork at 0x7f443cddc840>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f443cddc950>
+  worker_int: <function WorkerInt.worker_int at 0x7f443cddca60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f443cddcb70>
+  pre_exec: <function PreExec.pre_exec at 0x7f443cddcc80>
+  pre_request: <function PreRequest.pre_request at 0x7f443cddcd90>
+  post_request: <function PostRequest.post_request at 0x7f443cddce18>
+  child_exit: <function ChildExit.child_exit at 0x7f443cddcf28>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f443cdf70d0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f443cdf71e0>
+  on_exit: <function OnExit.on_exit at 0x7f443cdf72f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2022-11-10 18:55:38 +0530] [91599] [INFO] Starting gunicorn 20.1.0
+[2022-11-10 18:55:38 +0530] [91599] [DEBUG] Arbiter booted
+[2022-11-10 18:55:38 +0530] [91599] [INFO] Listening at: unix:/home/sahil/fastapi_demo/gunicorn.sock (91599)
+[2022-11-10 18:55:38 +0530] [91599] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2022-11-10 18:55:38 +0530] [91651] [INFO] Booting worker with pid: 91651
+[2022-11-10 18:55:39 +0530] [91657] [INFO] Booting worker with pid: 91657
+[2022-11-10 18:55:39 +0530] [91661] [INFO] Booting worker with pid: 91661
+[2022-11-10 18:55:39 +0530] [91662] [INFO] Booting worker with pid: 91662
+[2022-11-10 18:55:39 +0530] [91664] [INFO] Booting worker with pid: 91664
+[2022-11-10 18:55:39 +0530] [91665] [INFO] Booting worker with pid: 91665
+[2022-11-10 18:55:39 +0530] [91666] [INFO] Booting worker with pid: 91666
+[2022-11-10 18:55:39 +0530] [91667] [INFO] Booting worker with pid: 91667
+[2022-11-10 18:55:39 +0530] [91668] [INFO] Booting worker with pid: 91668
+[2022-11-10 18:55:39 +0530] [91671] [INFO] Booting worker with pid: 91671
+[2022-11-10 18:55:39 +0530] [91657] [INFO] Started server process [91657]
+[2022-11-10 18:55:39 +0530] [91657] [INFO] Waiting for application startup.
+[2022-11-10 18:55:39 +0530] [91657] [INFO] Application startup complete.
+[2022-11-10 18:55:39 +0530] [91673] [INFO] Booting worker with pid: 91673
+[2022-11-10 18:55:39 +0530] [91651] [INFO] Started server process [91651]
+[2022-11-10 18:55:39 +0530] [91651] [INFO] Waiting for application startup.
+[2022-11-10 18:55:39 +0530] [91651] [INFO] Application startup complete.
+[2022-11-10 18:55:39 +0530] [91674] [INFO] Booting worker with pid: 91674
+[2022-11-10 18:55:39 +0530] [91661] [INFO] Started server process [91661]
+[2022-11-10 18:55:39 +0530] [91661] [INFO] Waiting for application startup.
+[2022-11-10 18:55:39 +0530] [91661] [INFO] Application startup complete.
+[2022-11-10 18:55:39 +0530] [91675] [INFO] Booting worker with pid: 91675
+[2022-11-10 18:55:39 +0530] [91662] [INFO] Started server process [91662]
+[2022-11-10 18:55:39 +0530] [91662] [INFO] Waiting for application startup.
+[2022-11-10 18:55:39 +0530] [91662] [INFO] Application startup complete.
+[2022-11-10 18:55:39 +0530] [91676] [INFO] Booting worker with pid: 91676
+[2022-11-10 18:55:39 +0530] [91677] [INFO] Booting worker with pid: 91677
+[2022-11-10 18:55:39 +0530] [91665] [INFO] Started server process [91665]
+[2022-11-10 18:55:39 +0530] [91665] [INFO] Waiting for application startup.
+[2022-11-10 18:55:39 +0530] [91665] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91664] [INFO] Started server process [91664]
+[2022-11-10 18:55:40 +0530] [91664] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91664] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91678] [INFO] Booting worker with pid: 91678
+[2022-11-10 18:55:40 +0530] [91679] [INFO] Booting worker with pid: 91679
+[2022-11-10 18:55:40 +0530] [91666] [INFO] Started server process [91666]
+[2022-11-10 18:55:40 +0530] [91666] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91666] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91680] [INFO] Booting worker with pid: 91680
+[2022-11-10 18:55:40 +0530] [91667] [INFO] Started server process [91667]
+[2022-11-10 18:55:40 +0530] [91667] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91667] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91681] [INFO] Booting worker with pid: 91681
+[2022-11-10 18:55:40 +0530] [91682] [INFO] Booting worker with pid: 91682
+[2022-11-10 18:55:40 +0530] [91668] [INFO] Started server process [91668]
+[2022-11-10 18:55:40 +0530] [91668] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91668] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91683] [INFO] Booting worker with pid: 91683
+[2022-11-10 18:55:40 +0530] [91671] [INFO] Started server process [91671]
+[2022-11-10 18:55:40 +0530] [91671] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91671] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91684] [INFO] Booting worker with pid: 91684
+[2022-11-10 18:55:40 +0530] [91673] [INFO] Started server process [91673]
+[2022-11-10 18:55:40 +0530] [91673] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91673] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91685] [INFO] Booting worker with pid: 91685
+[2022-11-10 18:55:40 +0530] [91686] [INFO] Booting worker with pid: 91686
+[2022-11-10 18:55:40 +0530] [91675] [INFO] Started server process [91675]
+[2022-11-10 18:55:40 +0530] [91675] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91675] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91687] [INFO] Booting worker with pid: 91687
+[2022-11-10 18:55:40 +0530] [91688] [INFO] Booting worker with pid: 91688
+[2022-11-10 18:55:40 +0530] [91677] [INFO] Started server process [91677]
+[2022-11-10 18:55:40 +0530] [91677] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91677] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91689] [INFO] Booting worker with pid: 91689
+[2022-11-10 18:55:40 +0530] [91690] [INFO] Booting worker with pid: 91690
+[2022-11-10 18:55:40 +0530] [91691] [INFO] Booting worker with pid: 91691
+[2022-11-10 18:55:40 +0530] [91692] [INFO] Booting worker with pid: 91692
+[2022-11-10 18:55:40 +0530] [91676] [INFO] Started server process [91676]
+[2022-11-10 18:55:40 +0530] [91676] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91676] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91693] [INFO] Booting worker with pid: 91693
+[2022-11-10 18:55:40 +0530] [91694] [INFO] Booting worker with pid: 91694
+[2022-11-10 18:55:40 +0530] [91679] [INFO] Started server process [91679]
+[2022-11-10 18:55:40 +0530] [91679] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91679] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91680] [INFO] Started server process [91680]
+[2022-11-10 18:55:40 +0530] [91680] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91680] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91695] [INFO] Booting worker with pid: 91695
+[2022-11-10 18:55:40 +0530] [91674] [INFO] Started server process [91674]
+[2022-11-10 18:55:40 +0530] [91674] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91674] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91681] [INFO] Started server process [91681]
+[2022-11-10 18:55:40 +0530] [91681] [INFO] Waiting for application startup.
+[2022-11-10 18:55:40 +0530] [91681] [INFO] Application startup complete.
+[2022-11-10 18:55:40 +0530] [91599] [DEBUG] 33 workers
+[2022-11-10 18:55:41 +0530] [91684] [INFO] Started server process [91684]
+[2022-11-10 18:55:41 +0530] [91684] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91684] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91682] [INFO] Started server process [91682]
+[2022-11-10 18:55:41 +0530] [91682] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91682] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91678] [INFO] Started server process [91678]
+[2022-11-10 18:55:41 +0530] [91678] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91678] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91687] [INFO] Started server process [91687]
+[2022-11-10 18:55:41 +0530] [91687] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91687] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91683] [INFO] Started server process [91683]
+[2022-11-10 18:55:41 +0530] [91683] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91683] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91686] [INFO] Started server process [91686]
+[2022-11-10 18:55:41 +0530] [91686] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91686] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91688] [INFO] Started server process [91688]
+[2022-11-10 18:55:41 +0530] [91688] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91688] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91691] [INFO] Started server process [91691]
+[2022-11-10 18:55:41 +0530] [91691] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91691] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91692] [INFO] Started server process [91692]
+[2022-11-10 18:55:41 +0530] [91692] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91692] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91685] [INFO] Started server process [91685]
+[2022-11-10 18:55:41 +0530] [91685] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91685] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91689] [INFO] Started server process [91689]
+[2022-11-10 18:55:41 +0530] [91689] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91689] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91690] [INFO] Started server process [91690]
+[2022-11-10 18:55:41 +0530] [91690] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91690] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91693] [INFO] Started server process [91693]
+[2022-11-10 18:55:41 +0530] [91693] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91693] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91695] [INFO] Started server process [91695]
+[2022-11-10 18:55:41 +0530] [91695] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91695] [INFO] Application startup complete.
+[2022-11-10 18:55:41 +0530] [91694] [INFO] Started server process [91694]
+[2022-11-10 18:55:41 +0530] [91694] [INFO] Waiting for application startup.
+[2022-11-10 18:55:41 +0530] [91694] [INFO] Application startup complete.
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91681] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91684] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91679] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91678] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91664] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91661] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91682] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91688] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91674] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91675] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91667] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Finished server process [91692]
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91599] [INFO] Handling signal: term
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Finished server process [91694]
+[2022-11-23 22:51:02 +0530] [91671] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91692] [INFO] Worker exiting (pid: 91692)
+[2022-11-23 22:51:02 +0530] [91666] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91683] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91651] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91680] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Finished server process [91695]
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91687] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91677] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91657] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91694] [INFO] Worker exiting (pid: 91694)
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Finished server process [91693]
+[2022-11-23 22:51:02 +0530] [91662] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91668] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91665] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Finished server process [91690]
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Finished server process [91691]
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Finished server process [91685]
+[2022-11-23 22:51:02 +0530] [91695] [INFO] Worker exiting (pid: 91695)
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91693] [INFO] Worker exiting (pid: 91693)
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Finished server process [91686]
+[2022-11-23 22:51:02 +0530] [91676] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91673] [INFO] Shutting down
+[2022-11-23 22:51:02 +0530] [91690] [INFO] Worker exiting (pid: 91690)
+[2022-11-23 22:51:02 +0530] [91691] [INFO] Worker exiting (pid: 91691)
+[2022-11-23 22:51:02 +0530] [91599] [WARNING] Worker with pid 91692 was terminated due to signal 15
+[2022-11-23 22:51:02 +0530] [91685] [INFO] Worker exiting (pid: 91685)
+[2022-11-23 22:51:02 +0530] [91599] [WARNING] Worker with pid 91694 was terminated due to signal 15
+[2022-11-23 22:51:02 +0530] [91686] [INFO] Worker exiting (pid: 91686)
+[2022-11-23 22:51:02 +0530] [91684] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91681] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91679] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91664] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91674] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91682] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91661] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91688] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:02 +0530] [91678] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91687] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91666] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91675] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91680] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91667] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91657] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91671] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Application shutdown complete.
+[2022-11-23 22:51:02 +0530] [91677] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91668] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Finished server process [91689]
+[2022-11-23 22:51:02 +0530] [91665] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91662] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91683] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91651] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91673] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91676] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2022-11-23 22:51:02 +0530] [91689] [INFO] Worker exiting (pid: 91689)
+[2022-11-23 22:51:02 +0530] [91684] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91681] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91679] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91664] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91684] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91688] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91674] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91682] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91661] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91684] [INFO] Finished server process [91684]
+[2022-11-23 22:51:03 +0530] [91681] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91678] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91687] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91681] [INFO] Finished server process [91681]
+[2022-11-23 22:51:03 +0530] [91680] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91666] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91679] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91687] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91675] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91657] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91667] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91687] [INFO] Finished server process [91687]
+[2022-11-23 22:51:03 +0530] [91671] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91677] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91668] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91679] [INFO] Finished server process [91679]
+[2022-11-23 22:51:03 +0530] [91665] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91662] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91683] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91651] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91664] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91673] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91684] [INFO] Worker exiting (pid: 91684)
+[2022-11-23 22:51:03 +0530] [91680] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91676] [INFO] Waiting for application shutdown.
+[2022-11-23 22:51:03 +0530] [91664] [INFO] Finished server process [91664]
+[2022-11-23 22:51:03 +0530] [91688] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91682] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91680] [INFO] Finished server process [91680]
+[2022-11-23 22:51:03 +0530] [91674] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91661] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91678] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91681] [INFO] Worker exiting (pid: 91681)
+[2022-11-23 22:51:03 +0530] [91688] [INFO] Finished server process [91688]
+[2022-11-23 22:51:03 +0530] [91682] [INFO] Finished server process [91682]
+[2022-11-23 22:51:03 +0530] [91678] [INFO] Finished server process [91678]
+[2022-11-23 22:51:03 +0530] [91661] [INFO] Finished server process [91661]
+[2022-11-23 22:51:03 +0530] [91674] [INFO] Finished server process [91674]
+[2022-11-23 22:51:03 +0530] [91687] [INFO] Worker exiting (pid: 91687)
+[2022-11-23 22:51:03 +0530] [91666] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91666] [INFO] Finished server process [91666]
+[2022-11-23 22:51:03 +0530] [91679] [INFO] Worker exiting (pid: 91679)
+[2022-11-23 22:51:03 +0530] [91675] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91662] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91668] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91657] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91677] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91665] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91667] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91671] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91662] [INFO] Finished server process [91662]
+[2022-11-23 22:51:03 +0530] [91668] [INFO] Finished server process [91668]
+[2022-11-23 22:51:03 +0530] [91675] [INFO] Finished server process [91675]
+[2022-11-23 22:51:03 +0530] [91657] [INFO] Finished server process [91657]
+[2022-11-23 22:51:03 +0530] [91677] [INFO] Finished server process [91677]
+[2022-11-23 22:51:03 +0530] [91651] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91665] [INFO] Finished server process [91665]
+[2022-11-23 22:51:03 +0530] [91671] [INFO] Finished server process [91671]
+[2022-11-23 22:51:03 +0530] [91667] [INFO] Finished server process [91667]
+[2022-11-23 22:51:03 +0530] [91683] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91673] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91680] [INFO] Worker exiting (pid: 91680)
+[2022-11-23 22:51:03 +0530] [91651] [INFO] Finished server process [91651]
+[2022-11-23 22:51:03 +0530] [91673] [INFO] Finished server process [91673]
+[2022-11-23 22:51:03 +0530] [91683] [INFO] Finished server process [91683]
+[2022-11-23 22:51:03 +0530] [91676] [INFO] Application shutdown complete.
+[2022-11-23 22:51:03 +0530] [91664] [INFO] Worker exiting (pid: 91664)
+[2022-11-23 22:51:03 +0530] [91676] [INFO] Finished server process [91676]
+[2022-11-23 22:51:03 +0530] [91688] [INFO] Worker exiting (pid: 91688)
+[2022-11-23 22:51:03 +0530] [91678] [INFO] Worker exiting (pid: 91678)
+[2022-11-23 22:51:03 +0530] [91682] [INFO] Worker exiting (pid: 91682)
+[2022-11-23 22:51:03 +0530] [91661] [INFO] Worker exiting (pid: 91661)
+[2022-11-23 22:51:03 +0530] [91674] [INFO] Worker exiting (pid: 91674)
+[2022-11-23 22:51:03 +0530] [91666] [INFO] Worker exiting (pid: 91666)
+[2022-11-23 22:51:03 +0530] [91668] [INFO] Worker exiting (pid: 91668)
+[2022-11-23 22:51:03 +0530] [91657] [INFO] Worker exiting (pid: 91657)
+[2022-11-23 22:51:03 +0530] [91662] [INFO] Worker exiting (pid: 91662)
+[2022-11-23 22:51:03 +0530] [91677] [INFO] Worker exiting (pid: 91677)
+[2022-11-23 22:51:03 +0530] [91675] [INFO] Worker exiting (pid: 91675)
+[2022-11-23 22:51:03 +0530] [91671] [INFO] Worker exiting (pid: 91671)
+[2022-11-23 22:51:03 +0530] [91665] [INFO] Worker exiting (pid: 91665)
+[2022-11-23 22:51:03 +0530] [91667] [INFO] Worker exiting (pid: 91667)
+[2022-11-23 22:51:03 +0530] [91673] [INFO] Worker exiting (pid: 91673)
+[2022-11-23 22:51:03 +0530] [91651] [INFO] Worker exiting (pid: 91651)
+[2022-11-23 22:51:03 +0530] [91683] [INFO] Worker exiting (pid: 91683)
+[2022-11-23 22:51:03 +0530] [91676] [INFO] Worker exiting (pid: 91676)
+[2022-11-23 22:51:06 +0530] [91599] [INFO] Shutting down: Master
