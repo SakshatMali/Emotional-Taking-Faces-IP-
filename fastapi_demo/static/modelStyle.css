@@ -1,0 +1,148 @@
+:root {
+    --textColor: #FFA602;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar,
+.navbar-inverse {
+    background: white;
+    /* display:inline-block; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+a,
+a:link,
+a:visited {
+    color: var(--textColor) !important;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 5%;
+    display: inline-block;
+    float: left;
+}
+
+.navbar-header {
+    width: 20.5%;
+    display: inline-block;
+}
+
+.img-fluid {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.navbar-fixed-top ul li {
+    display: inline-block;
+    /* color:#808080 !important; */
+
+}
+
+li {
+    /* display: inline; */
+    list-style: none;
+    padding-right: 30px;
+}
+
+.oval {
+    background-color: #ddd;
+    border: black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px -10px;
+    cursor: pointer;
+    border-radius: 16px;
+    /* margin-top: 4px */
+}
+
+.oval:hover {
+    background-color: #f1f1f1;
+}
+
+.rectangle {
+    /* width: 24rem;
+    height: 14rem; */
+    background: rgb(0, 119, 128);
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    left: 75%;
+    bottom: 75%;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    overflow: clip;
+}
+
+.rectangle2 {
+    /* width: 24rem;
+    height: 14rem; */
+    background: rgb(0, 119, 128);
+    transform: rotate(45deg);
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    right: 75%;
+    top: 80%;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    overflow: clip;
+}
+
+
+
+/* ----------- Model ----------- */
+
+#subtitle {
+    margin-top: 2%;
+    margin-left: 40%;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+.titleText {
+    font-size: 130%;
+    font-weight: 50;
+}
+
+.container img {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.captionImg {
+    display: inline-block;
+    margin-left: 20%;
+    font-size: 10px;
+}
+
+.bodyText {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.bodyClass {
+    margin-top: 2%;
+    font-size: small;
+    margin-left: 27%;
+}
+
+.boldText {
+    font-weight: bold;
+    font-size: larger;
+}

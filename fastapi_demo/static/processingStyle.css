@@ -1,0 +1,138 @@
+:root {
+    --textColor: #FFA602;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar,
+.navbar-inverse {
+    background: white;
+    /* display:inline-block; */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+a,
+a:link,
+a:visited {
+    color: var(--textColor) !important;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 5%;
+    display: inline-block;
+    float: left;
+}
+
+.navbar-header {
+    width: 20.5%;
+    display: inline-block;
+}
+
+.img-fluid {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.navbar-fixed-top ul li {
+    display: inline-block;
+    /* color:#808080 !important; */
+
+}
+
+li {
+    /* display: inline; */
+    list-style: none;
+    padding-right: 30px;
+}
+
+#process-text {
+    color:#FFA602;
+    font-weight: bold;
+    position: absolute;
+    top: 500px;
+    left: 550px;
+    
+    
+}
+
+.loader {
+    border: 24px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 24px solid #FFA602;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+  
+  /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.oval {
+    background-color: #ddd;
+    border: black;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px -10px;
+    cursor: pointer;
+    border-radius: 16px;
+    /* margin-top: 4px */
+}
+
+.oval:hover {
+    background-color: #f1f1f1;
+}
+
+.rectangle {
+    /* width: 24rem;
+    height: 14rem; */
+    background: rgb(0, 119, 128);
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    left: 75%;
+    bottom: 75%;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    overflow: clip;
+}
+  
+.rectangle2 {
+/* width: 24rem;
+height: 14rem; */
+    background: rgb(0, 119, 128);
+    transform: rotate(45deg);
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    right: 75%;
+    top: 80%;
+    background: #FFEAA7;
+    border-radius: 99px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    overflow: clip;
+}
